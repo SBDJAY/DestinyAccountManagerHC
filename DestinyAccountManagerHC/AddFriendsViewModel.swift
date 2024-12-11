@@ -5,6 +5,7 @@
 //  Created by Jared Johnston on 2024-12-11.
 //
 
+//https://www.kodeco.com/library?q=UserDefaults
 import Foundation
 
 class AddFriendsViewModel: ObservableObject {

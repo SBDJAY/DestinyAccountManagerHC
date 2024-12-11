@@ -1,5 +1,7 @@
 //DANIEL PIUS - 991675608
-
+//https://www.hackingwithswift.com/search/Push%20Notifications
+//https://peerdh.com/blogs/programming-insights/creating-a-custom-notification-manager-in-swiftui
+//https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate
 
 import UserNotifications
 
