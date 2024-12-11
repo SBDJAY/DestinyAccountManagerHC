@@ -1,16 +1,24 @@
+//DANIEL PIUS - 991675608
+
+
 import UserNotifications
 
 class NotificationManager {
-    // Request permission to send notifications
+    
+    // Request notification permission from the user
     static func requestNotificationPermission() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { granted, error in
             if let error = error {
                 print("Error requesting notification permission: \(error)")
+            } else if granted {
+                print("Notification permission granted")
+            } else {
+                print("Notification permission denied")
             }
         }
     }
 
-    // Send a local notification
+    // Send a notification when an item is added
     static func sendNotification(itemName: String) {
         // Create notification content
         let content = UNMutableNotificationContent()
@@ -32,3 +40,4 @@ class NotificationManager {
         }
     }
 }
+

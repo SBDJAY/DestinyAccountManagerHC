@@ -1,3 +1,6 @@
+//DANIEL PIUS - 991675608
+
+
 import Foundation
 
 class InventoryViewModel: ObservableObject {

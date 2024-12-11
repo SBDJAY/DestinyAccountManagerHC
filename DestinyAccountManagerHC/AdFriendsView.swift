@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddFriendsView: View {
     @StateObject private var viewModel = AddFriendsViewModel() // ViewModel
-    @State private var newFriendName: String = "" // State for new friend's name
+    @State private var newFriendName: String = "" 
     
     var body: some View {
         ZStack {

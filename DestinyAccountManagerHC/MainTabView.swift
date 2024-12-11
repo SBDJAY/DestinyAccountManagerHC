@@ -1,9 +1,5 @@
-//
-//  MainTabView.swift
-//  DestinyAccountManagerHC
-//
-//  Created by Daniel Pius on 2024-12-10.
-//
+//DANIEL PIUS - 991675608
+
 
 
 import SwiftUI
@@ -13,12 +9,12 @@ struct MainTabView: View {
         TabView {
             CharacterListView()
                 .tabItem {
-                    Label("Characters", systemImage: "person.3.fill")
+                    Label("Gaurdians", systemImage: "person.3.fill")
                 }
             
             InventoryView()
                 .tabItem {
-                    Label("Inventory", systemImage: "cube.fill")
+                    Label("Vault Management", systemImage: "cube.fill")
                 }
             
             AddFriendsView()

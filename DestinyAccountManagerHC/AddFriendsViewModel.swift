@@ -16,6 +16,7 @@ class AddFriendsViewModel: ObservableObject {
     }
     
     // Save friends to UserDefaults
+    //Works After code stops 
     func saveFriends() {
         if let encoded = try? JSONEncoder().encode(friends) {
             UserDefaults.standard.set(encoded, forKey: "friendsList")

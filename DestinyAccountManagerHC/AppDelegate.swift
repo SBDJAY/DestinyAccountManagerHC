@@ -1,15 +1,20 @@
+//
+//  AppDelegate.swift
+//  DestinyAccountManagerHC
+//
+//  Created by Daniel Pius on 2024-12-11.
+//
+//DANIEL PIUS - 991675608
+
+
 import UIKit
 import UserNotifications
 
-// AppDelegate that handles notifications
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
-    // Called when the app finishes launching
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Request notification permission when the app launches
         NotificationManager.requestNotificationPermission()
         
-        // Set the delegate for UNUserNotificationCenter to handle notifications in the foreground
         UNUserNotificationCenter.current().delegate = self
         
         return true

@@ -1,16 +1,12 @@
-//
-//  LoginView.swift
-//  DestinyAccountManagerHC
-//
-//  Created by Daniel Pius on 2024-12-10.
-//
+//DANIEL PIUS - 991675608
+
 
 
 import SwiftUI
 
 struct LoginView: View {
     @StateObject private var viewModel = LoginViewModel()
-    @State private var isAuthenticated = false  // State for managing navigation
+    @State private var isAuthenticated = false
     
     var body: some View {
         NavigationView {
@@ -23,13 +19,13 @@ struct LoginView: View {
                 TextField("Username", text: $viewModel.username)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal)
-                    .foregroundColor(.black)  // Text color set to black
+                    .foregroundColor(.black)
                 
                 SecureField("Password", text: $viewModel.password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal)
                     .padding(.bottom, 20)
-                    .foregroundColor(.black)  // Text color set to black
+                    .foregroundColor(.black)  
                 
                 Button(action: {
                     viewModel.login()
