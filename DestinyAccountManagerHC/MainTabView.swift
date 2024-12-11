@@ -21,6 +21,12 @@ struct MainTabView: View {
                     Label("Inventory", systemImage: "cube.fill")
                 }
             
+            AddFriendsView()
+                .tabItem{
+                    Image(systemName: "person.badge.plus.fill")
+                    Text("Add Friends")
+                }
+            
             StatisticsView()
                 .tabItem {
                     Label("Stats", systemImage: "chart.bar.fill")
