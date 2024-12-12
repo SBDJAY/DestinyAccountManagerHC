@@ -2,7 +2,8 @@
 
 import Foundation
 
-struct InventoryItem: Identifiable {
+//coadable needed for saving data 
+struct InventoryItem: Identifiable, Codable {
     let id = UUID()
     let name: String
 }

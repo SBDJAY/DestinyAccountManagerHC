@@ -41,13 +41,13 @@ struct InventoryView: View {
                     .pickerStyle(SegmentedPickerStyle())
                     .padding(.bottom, 10)
                     
-                    // Text field for entering new item
+                    // Text field for adding gear
                     HStack {
                         TextField("Enter item name", text: $newItemName)
                             .padding(10)
                             .foregroundColor(.white)
                             .background(Color.gray.opacity(0.3))
-                            .cornerRadius(8) 
+                            .cornerRadius(8)
                             .padding(.bottom, 10)
                         
                         Button(action: {
@@ -66,7 +66,7 @@ struct InventoryView: View {
                                 .background(Color.mint)
                                 .cornerRadius(8)
                         }
-                        .disabled(newItemName.isEmpty) // Disable button if input is empty
+                        .disabled(newItemName.isEmpty)
                     }
                 }
                 .listStyle(PlainListStyle())
@@ -77,7 +77,6 @@ struct InventoryView: View {
             .padding()
         }
         .onAppear {
-            // Request permission to send notifications when the view appears
             NotificationManager.requestNotificationPermission()
         }
     }
